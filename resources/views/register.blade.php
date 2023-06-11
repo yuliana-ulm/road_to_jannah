@@ -56,7 +56,11 @@
                             </div>
 
 
+<<<<<<< HEAD
                             <button type="submit" class="btn btn-primary">Submit</button>
+=======
+                            <a href="/aqidah" type="submit" class="btn btn-primary">Submit</a>
+>>>>>>> 432168b (first commit)
                           </form>
                     </div>
                 </div>

@@ -8,7 +8,10 @@ use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\RedirectResponse;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 432168b (first commit)
 class registerController extends Controller
 {
     public function show()
@@ -25,7 +28,11 @@ class registerController extends Controller
         ]);
 
         $query = User::create([
+<<<<<<< HEAD
             'name' => $request->namaInput,
+=======
+            'nama' => $request->namaInput,
+>>>>>>> 432168b (first commit)
             'email' => $request->emailInput,
             'password' => Hash::make($request->passwordInput)
         ]);
