@@ -3,13 +3,14 @@
 namespace App\Http\Controllers;
 
 use App\Models\manhaj;
+use App\Models\Pegawai;
 use Illuminate\Http\Request;
 
 class manhajController extends Controller
 {
     public function index()
     {
-        $materi = manhaj::all();
+        $materi = Pegawai::all();
 
         return view('manhaj', compact('materi'));
     }

@@ -56,7 +56,7 @@
                             </div>
 
 
-                            <a href="/aqidah" type="submit" class="btn btn-primary">Submit</a>
+                            <button type="submit" class="btn btn-primary">Submit</button>
                           </form>
                     </div>
                 </div>

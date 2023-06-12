@@ -1,5 +1,5 @@
 <footer class="main-footer">
 
     <!-- Default to the left -->
-    <strong><a>Tugas 4</a>.</strong>
+    <strong><a>Tugas Besar RTJ</a>.</strong>
   </footer>
