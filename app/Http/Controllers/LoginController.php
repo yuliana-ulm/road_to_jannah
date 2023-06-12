@@ -23,16 +23,12 @@ class LoginController extends Controller
 
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
-<<<<<<< HEAD
             if(Auth::user()->is_admin==0){
                 return redirect()->intended('dashboard');
             }
     else{
         return redirect()->intended('beranda');
     }
-=======
-            return redirect()->intended('dashboard');
->>>>>>> 432168b (first commit)
         }
 
         return back()->withErrors([

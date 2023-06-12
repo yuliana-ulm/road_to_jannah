@@ -46,7 +46,7 @@
                     <label >Pegawai</label>
                     <input type="text" class="form-control" placeholder="masukkan nama pegawai" name="nama" value="{{ $peg->nama}}">
                     <label >Jabatan</label>
-                    <select class"form-control select2" style="width:100%; border-color:rgb(213, 212, 212)" name="jabatan_id" id="jabatan_id">
+                    <select class="form-control select2" style="width:100%; border-color:rgb(213, 212, 212)" name="jabatan_id" id="jabatan_id">
                         <option disabled value>Pilih Jabatan</option>
                         <option value="{{ $peg->jabatan_id}}">{{ $peg->jabatan->jabatan }}</option>
                         @foreach ($jab as $item)

@@ -14,10 +14,7 @@ use App\Http\Controllers\PetugasController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\MahasiswaController;
 use App\Http\Controllers\UploadgambarController;
-<<<<<<< HEAD
 use App\Http\Controllers\berandaController;
-=======
->>>>>>> 432168b (first commit)
 
 /*
 |--------------------------------------------------------------------------
@@ -41,12 +38,8 @@ Route::post('/register', [registerController::class, 'store'])->name('register.s
 
 Route::middleware('auth')->group(function () {
     Route::get('/logout', [LoginController::class, 'logout'])->name('login.logout');
-<<<<<<< HEAD
     Route::get('/dashboard',[DashboardController::class,'index'])->name('dashboard.index');
     Route::get('/beranda',[berandaController::class,'index'])->name('beranda.index');
-=======
-    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard.index');
->>>>>>> 432168b (first commit)
 
     Route::group([
         'prefix' => 'admin',
@@ -59,22 +52,12 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::get('/aqidah', [aqidahController::class, 'index']);
-<<<<<<< HEAD
 Route::get('/manhaj', [manhajController::class, 'index'])->name('manhaj');
 Route::get('/fiqih', [fiqihController::class, 'index']);
 Route::get('/sejarah', [sejarahController::class, 'index']);
 
     Route::post('/simpan-pegawai', [PegawaiController::class, 'store'])->name('simpan-pegawai.store');
     Route::get('/manhaj-create', [manhajController::class, 'create'])->name('create-pegawai.create');
-=======
-Route::get('/manhaj', [manhajController::class, 'index']);
-Route::get('/fiqih', [fiqihController::class, 'index']);
-Route::get('/sejarah', [sejarahController::class, 'index']);
-Route::get('/beranda',[LoginController::class,'showDataPengguna'])->name('LoginController.showDataPengguna');
-
-    Route::post('/simpan-pegawai', [PegawaiController::class, 'store'])->name('simpan-pegawai.store');
-    Route::get('/create-pegawai', [PegawaiController::class, 'create'])->name('create-pegawai.create');
->>>>>>> 432168b (first commit)
     Route::get('/data-pegawai', [PegawaiController::class, 'index'])->name('data-pegawai.index');
     Route::get('/edit-pegawai/{id}', [PegawaiController::class, 'edit'])->name('edit-pegawai.edit');
     Route::post('/update-pegawai/{id}', [PegawaiController::class, 'update'])->name('update-pegawai.update');

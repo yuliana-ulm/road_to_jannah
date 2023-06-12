@@ -3,21 +3,14 @@
 namespace App\Http\Controllers;
 
 use App\Models\manhaj;
-<<<<<<< HEAD
 use App\Models\Pegawai;
-=======
->>>>>>> 432168b (first commit)
 use Illuminate\Http\Request;
 
 class manhajController extends Controller
 {
     public function index()
     {
-<<<<<<< HEAD
         $materi = Pegawai::all();
-=======
-        $materi = manhaj::all();
->>>>>>> 432168b (first commit)
 
         return view('manhaj', compact('materi'));
     }
